@@ -19,7 +19,36 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
-        <script type="text/javascript" src="/js/operaciones.js"></script>
+        <script>
+            function calcular() {
+                var base = Number(document.getElementById('base').value);
+                var exponente = Number(document.getElementById('exponente').value);
+                var resultado = document.getElementById('resultado');
+                var inicio = 0;
+                var inicio2 = 1;
+                var sumaInterna = base;
+                var baseInicial = base;
+                while (inicio < exponente - 1) {
+                    inicio2 = 1;
+                    while (inicio2 < base) {
+                        sumaInterna = sumaInterna + baseInicial;
+                        inicio2++;
+                    }
+                    baseInicial = sumaInterna;
+                    inicio++;
+                }
+                resultado.value = (sumaInterna).toString();
+            }
+
+            function acumular(){
+                var resultado = Number(document.getElementById('resultado').value);
+                var acumulado = Number(document.getElementById('acumulado').value);
+                var acum = document.getElementById('acumulado');
+                var suma = resultado + acumulado;
+                acum.value = suma;
+            }
+
+        </script>
     </head>
     <body>
         <div class="container bg-dark text-white py-3" style="margin-top: 2px;">
@@ -34,24 +63,24 @@
         <div class="content" style="text-align: center;">
             <label>Base</label>
             <br>
-            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 525px" type="number" id="base">
+            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 550px" type="number" id="base">
             <br>
             <label>Exponente</label>
             <br>
-            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 525px"  type="number" id="exponente">
+            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 550px"  type="number" id="exponente">
             <br>
             <button class="btn btn-secondary" onclick="calcular()">Calcular</button>
             <br>
             <br>
             <label>Potencia</label>
             <br>
-            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 525px"  type="text" id="resultado" disabled>
+            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 550px"  type="text" id="resultado" disabled>
             <br>
             <button class="btn btn-secondary" onclick="acumular()">Calcular</button>
             <br>
             <label >Acumulado</label>
             <br>
-            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 525px"  type="text" id="acumulado" disabled>
+            <input class="form-control" style="width : 200px; heigth : 1px; margin-left: 550px"  type="text" id="acumulado" disabled>
         </div>
     </body>
 </html>
