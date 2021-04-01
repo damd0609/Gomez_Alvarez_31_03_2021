@@ -19,7 +19,7 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
-        <script type="text/javascript" src="/js/resuelto.js"></script>
+        <script type="text/javascript" src="/js/operaciones.js"></script>
     </head>
     <body>
         <div class="container bg-dark text-white py-3" style="margin-top: 2px;">
