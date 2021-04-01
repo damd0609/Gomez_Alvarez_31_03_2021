@@ -60,27 +60,27 @@
             <h2 style="text-align: center; color: brown;">Prueba 2 Parcial Intersemestral</h2>
         </div>
         <br>
-        <div class="content" style="text-align: center;">
+        <div class="container" style="text-align: center;">
             <label>Base</label>
             <br>
-            <input class="form-control" type="number" id="base">
+            <input type="number" id="base">
             <br>
             <label>Exponente</label>
             <br>
-            <input class="form-control" type="number" id="exponente">
+            <input type="number" id="exponente">
             <br>
             <button class="btn btn-secondary" onclick="calcular()">Calcular</button>
             <br>
             <br>
             <label>Potencia</label>
             <br>
-            <input class="form-control" type="text" id="resultado" disabled>
+            <input type="text" id="resultado" disabled>
             <br>
             <button class="btn btn-secondary" onclick="acumular()">Calcular</button>
             <br>
             <label >Acumulado</label>
             <br>
-            <input class="form-control" type="text" id="acumulado" disabled>
+            <input type="text" id="acumulado" disabled>
         </div>
     </body>
 </html>
