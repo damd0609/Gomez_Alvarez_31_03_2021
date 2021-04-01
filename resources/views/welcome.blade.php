@@ -63,24 +63,24 @@
         <div class="container" style="text-align: center;">
             <label>Base</label>
             <br>
-            <input type="number" id="base">
+            <center><input class="form-control" type="number" id="base" style="width: 20%; text-align: right;"></center>
             <br>
             <label>Exponente</label>
             <br>
-            <input type="number" id="exponente">
+            <center><input class="form-control" type="number" id="exponente" style="width: 20%; text-align: right;"></center>
             <br>
             <button class="btn btn-secondary" onclick="calcular()">Calcular</button>
             <br>
             <br>
             <label>Potencia</label>
             <br>
-            <input type="text" id="resultado" disabled>
+            <center><input class="form-control" type="text" id="resultado" style="width: 20%; text-align: right;" disabled></center>
             <br>
             <button class="btn btn-secondary" onclick="acumular()">Calcular</button>
             <br>
             <label >Acumulado</label>
             <br>
-            <input type="text" id="acumulado" disabled>
+            <center><input class="form-control" type="text" id="acumulado" style="width: 20%; text-align: right;" disabled></center>
         </div>
     </body>
 </html>
